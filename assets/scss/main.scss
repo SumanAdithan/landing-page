@@ -1,5 +1,12 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+// Base
+@import './base/reset';
+@import './base/global';
+
+// Utilities
+@import './utilities/animation';
+
+// Components
+@import './components/buttons';
+
+// Layout
+@import './layouts/header';
