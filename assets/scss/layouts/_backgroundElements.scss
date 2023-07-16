@@ -1,0 +1,113 @@
+.background-shapes{
+
+	.box{
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		background: transparent;
+		border: 3px solid #3f43fd;
+		border-radius: 0.35rem;
+		z-index: -1;
+		transform: rotate(360deg);
+		animation: box-shape linear 5s infinite;
+	}
+
+	.box-1{
+		@extend .box;
+		top: 20%;
+		left: 10%;
+	}
+
+	.box-2{
+		@extend .box;
+		top: 80%;
+		left: 60%;
+	}
+
+	.box-3{
+		@extend .box;
+		top: 30%;
+		left: 90%;
+	}
+
+	.dot{
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		z-index: -1;
+		transform: rotate(360deg);
+		animation: box-shape linear 5s infinite;
+	}
+
+	.dot-1{
+		@extend .dot;
+		background: #3f43fd;
+		top: 77%;
+		left: 6%;
+	}
+
+	.dot-2{
+		@extend .dot;
+		background: #f4284a;
+		top: 18%;
+		right: 4%;
+	}
+
+	.dot-3{
+		@extend .dot;
+		background: #f4284a;
+		top: 90%;
+		left: 43%;
+	}
+
+	.dot-4{
+		@extend .dot;
+		background: #3f43fd;
+		top: 91%;
+		right: 5%;
+	}
+
+	.heart{
+		position: absolute;
+		font-size: 1.5rem;
+		z-index: -1;
+		color: #f4284a;
+		animation: box-shape linear 5s infinite;	
+	}
+
+	.heart-1{
+		@extend .heart;
+		top: 51%;
+		left: 12%;
+	}
+
+	.heart-2{
+		@extend .heart;
+		top: 55%;
+		right: 8%;
+	}
+
+	.circle{
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		border: 3px solid #f4284a;
+		border-radius: 50%;
+		z-index: -1;
+		transform: rotate(360deg);
+		animation: box-shape linear 5s infinite;
+	}
+
+	.circle-1{
+		@extend .circle;
+		top: 90%;
+		left: 21%;
+	}
+
+	.circle-2{
+		@extend .circle;
+		top: 24%;
+		left: 52%;
+	}
+}
