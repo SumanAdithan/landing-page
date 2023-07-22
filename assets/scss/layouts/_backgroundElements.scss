@@ -1,5 +1,9 @@
-.background-shapes{
+@use "../abstract/mixins" as mixins;
 
+.background-shapes{
+	@include mixins.responsive(xs){
+		display: none;
+	}
 	.box{
 		position: absolute;
 		width: 15px;
