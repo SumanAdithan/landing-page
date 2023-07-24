@@ -26,6 +26,10 @@
 		@extend .box;
 		top: 80%;
 		left: 60%;
+		@include mixins.responsive(sm){
+			top: 65%;
+			left: 75%;
+		}
 	}
 
 	.box-3{
@@ -56,6 +60,11 @@
 		background: #f4284a;
 		top: 18%;
 		right: 4%;
+
+		@include mixins.responsive(sm){
+			top: 22%;
+			right: 20%;
+		}
 	}
 
 	.dot-3{
@@ -84,6 +93,9 @@
 		@extend .heart;
 		top: 51%;
 		left: 12%;
+		@include mixins.responsive(sm){
+			top: 40%;
+		}
 	}
 
 	.heart-2{
@@ -107,6 +119,10 @@
 		@extend .circle;
 		top: 90%;
 		left: 21%;
+
+		@include mixins.responsive(sm){
+			top: 90%;
+		}
 	}
 
 	.circle-2{

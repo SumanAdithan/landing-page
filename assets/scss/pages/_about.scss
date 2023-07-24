@@ -17,8 +17,17 @@
 		margin-top: 0;
 	}
 
+	@include mixins.responsive(sm) {
+		padding: 4rem 2rem;
+		flex-direction: column;
+		margin-top: 0;
+	}
+
 	&-img{
 		width: 32rem;
+		@include mixins.responsive(xs) {
+			width: 20rem;
+		}
 	}
 
 	&-contents{
@@ -27,9 +36,18 @@
 			margin: 0;
 		}
 
+		@include mixins.responsive(sm) {
+			margin: 0;
+		}
+
 		h2{
 			font-size: 3rem;
+			
 			@include mixins.responsive(xs) {
+				font-size: 1.5rem;
+			}
+
+			@include mixins.responsive(sm) {
 				font-size: 1.5rem;
 			}
 		}
@@ -39,6 +57,10 @@
 			color: cfcfcf;
 
 			@include mixins.responsive(xs) {
+				font-size: 0.9rem;
+			}
+
+			@include mixins.responsive(sm) {
 				font-size: 0.9rem;
 			}
 			
