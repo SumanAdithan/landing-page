@@ -65,6 +65,10 @@
 			top: 22%;
 			right: 20%;
 		}
+
+		@include mixins.responsive(sm){
+			top: 15%;
+		}
 	}
 
 	.dot-3{
@@ -129,5 +133,9 @@
 		@extend .circle;
 		top: 24%;
 		left: 52%;
+
+		@include mixins.responsive(md){
+			top: 10%;
+		}
 	}
 }
