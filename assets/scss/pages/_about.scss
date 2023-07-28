@@ -23,10 +23,21 @@
 		margin-top: 0;
 	}
 
+	@include mixins.responsive(lg) {
+		padding: 6rem 8rem;
+		flex-direction: row;
+		margin-top: 0;
+		align-items: center;
+	}
+
 	&-img{
 		width: 32rem;
 		@include mixins.responsive(xs) {
 			width: 20rem;
+		}
+
+		@include mixins.responsive(lg) {
+			width: 64rem;
 		}
 	}
 

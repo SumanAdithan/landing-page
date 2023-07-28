@@ -100,12 +100,21 @@
 		@include mixins.responsive(sm){
 			top: 40%;
 		}
+
+		@include mixins.responsive(lg){
+			left: 5%;
+		}
 	}
 
 	.heart-2{
 		@extend .heart;
 		top: 55%;
 		right: 8%;
+
+		@include mixins.responsive(lg){
+			top: 60%;
+			right: 5%;
+		}
 	}
 
 	.circle{
@@ -136,6 +145,10 @@
 
 		@include mixins.responsive(md){
 			top: 10%;
+		}
+
+		@include mixins.responsive(lg){
+			top: 15%;
 		}
 	}
 }

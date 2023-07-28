@@ -20,6 +20,10 @@
 		padding: 1rem 2rem;
 	}
 
+	@include mixins.responsive(lg) {
+		padding: 1rem 6rem;
+	}
+
 	h2 > span{
 		@include mixins.responsive(xs) {
 			font-size: 1rem;
@@ -38,8 +42,8 @@
 			font-size: 1.3rem;
 		}
 
-		@include mixins.responsive(md) {
-			font-size: 1.3rem;
+		@include mixins.responsive(lg) {
+			display: none;
 		}
 	}
 	
@@ -55,6 +59,10 @@
 
 		@include mixins.responsive(sm){
 			display: none;
+		}
+
+		@include mixins.responsive(sm){
+			display: flex;
 		}
 
 		&-item > a{
